@@ -71,13 +71,15 @@ $('#submit').on('click', function(e) {
     
         console.log(person);
 
-        let max = -1;       //finding which one appeared the most # of times
+        let max = 0;       //finding which one appeared the most # of times
         for (let j = 0; j < person.length; j++){
-            if (person[j] > max){
+            if (person[j] > person[max]){
                 max = j;
+                console.log(max);
             }
         }
 
+        console.log(max);
         /*inspired from https://www.includehelp.com/code-snippets/different-ways-to-display-output-in-javascript.aspx*/
         if (max == 0){
             document.getElementById("lineOne").innerText = "marge nichols";
