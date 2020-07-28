@@ -19,7 +19,6 @@ $('#submit').on('click', function(e) {
       return $(radio).val();
     }).toArray();
 
-    console.log(choices.length)
     // now you have an array of choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
     // you'll need to do some calculations with this
     // a naive approach would be to just choose the most common option - seems reasonable
@@ -70,16 +69,14 @@ $('#submit').on('click', function(e) {
         else if (choices[8] == 3) {person[4] = person[4]+1; person[5] = person[5]+1;}
         else {person[2] = person[2]+1;}
     
+        console.log(person);
+
         let max = -1;       //finding which one appeared the most # of times
         for (let j = 0; j < person.length; j++){
             if (person[j] > max){
                 max = j;
             }
         }
-
-        console.log(max);
-        console.log('your person is: ');
-        console.log(person[max]);
 
         /*inspired from https://www.includehelp.com/code-snippets/different-ways-to-display-output-in-javascript.aspx*/
         if (max == 0){
