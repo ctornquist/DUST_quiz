@@ -102,6 +102,7 @@ $('#submit').on('click', function(e) {
         } else if (max == 4) {
             document.getElementById("lineOne").innerText = "NETTY GAWERC";
             document.getElementById("lineTwo").innerText = "you're the only one who knows how to pronounce 'HEB Groceries'";
+            document.getElementById("photo").innerHTML = '<img id="pic" src="./pics/netty.JPG" alt="netty" />';
         } else if (max == 5) {
             document.getElementById("lineOne").innerText = "CROUTON";
             document.getElementById("lineTwo").innerText = "your ideal night is getting drunk on a tuesday and building a hogwarts replica out of legos";
