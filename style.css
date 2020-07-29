@@ -43,6 +43,7 @@ label {
     flex-direction: column;
     flex-basis: 35%; 
     width: 13em;
+    width: 105%;
 }
 
 label:hover{
@@ -50,14 +51,21 @@ label:hover{
     box-shadow: -3px -3px 10px black;
 }
 
+label > img {
+    width: 100%;
+    height: auto;
+}
+
 p {
     display: flex;
     justify-content: center;
-    line-height: 50px;
+    line-height: 25px;
     width: 200px;
     margin: 0;
     text-align: center;
     width: 100%;
+    font-size: 1.2em;
+    padding: 10px;
 }
 
 .questionOne, .questionTwo, .questionThree, .questionFour, .questionFive, .questionSix, .questionSeven, .questionEight, .questionNine {
@@ -85,10 +93,12 @@ p {
     align-items: center;
 }
 
-
-img {
-    max-width: 100%;
-    height: auto;
+.boxesTwo > label, .boxesFive > label, .boxesSix > label {
+    background-color: pink;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -120,4 +130,29 @@ button:hover {
     width: 100vw;
     height: 150px;
     margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#photo {
+    width: 400px;
+}
+
+#pic {
+    display: flex;
+    width: 75%;
+    height: auto;
+    margin: 15px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    max-width: 325px;
+    margin: 15px;
+}
+
+#lineOne{
+    text-emphasis: bold;
 }
